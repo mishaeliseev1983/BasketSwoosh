@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">BasketSwoosh</string>
+    <string name="backgroundApp">BackgroundApp</string>
 </resources>
