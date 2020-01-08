@@ -6,4 +6,103 @@
     android:layout_height="match_parent"
     tools:context=".LeagueActivity">
 
+    <ImageView
+        android:id="@+id/backgroundView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/desiredleaguebg" />
+
+    <ImageView
+        android:id="@+id/swooshLogoView"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backgroundView"
+        app:srcCompat="@drawable/swooshlogo" />
+
+    <TextView
+        android:id="@+id/textViewDesiredLeague"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Desired League"
+        android:textColor="#F5EFEF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/swooshLogoView" />
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/backgroundView"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDesiredLeague">
+
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:fontFamily="@font/montserrat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/swoosh_toggle"
+            android:text="Mens"
+            android:textColor="#F5EFEF"
+            android:textOff="Mens"
+            android:textOn="Mens" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton2"
+            android:fontFamily="@font/montserrat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/swoosh_toggle"
+            android:text="Womens"
+            android:textColor="#F5EFEF"
+            android:textOff="Womens"
+            android:textOn="Womens" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton3"
+            android:fontFamily="@font/montserrat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/swoosh_toggle"
+            android:text="Co-ed"
+            android:textColor="#F5EFEF"
+            android:textOff="Co-Ed"
+            android:textOn="Co-ed" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/swoosh_toggle"
+        android:fontFamily="@font/montserrat"
+        android:text="NEXT"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
