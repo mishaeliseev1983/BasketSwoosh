@@ -1,4 +1,4 @@
-package com.melyseev.basketswoosh
+package com.melyseev.basketswoosh.Controller
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
